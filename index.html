@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Clicker</title>
+    <link rel="icon" href="MainBanana.png" type="image/png"> <!-- Favicon -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div id="left-section">
+            <img src="MainBanana.png" id="monkey" alt="Monkey">
+            <div id="banana-counter">
+                <p>Bananas: <span id="banana-count">0.0</span></p>
+                <p>BPS (Bananas per Second): <span id="bps">0.0</span></p>
+                <p>BPC (Bananas per Click): <span id="bpc">1.0</span></p>
+                <p>Total Bananas Made: <span id="tbm">0.0</span></p> <!-- Added TBM display -->
+            </div>
+
+            <div id="save-section">
+                <button id="export-save">Export Save</button>
+                <button id="import-save">Import Save</button>
+                <input type="file" id="save-file-input" style="display:none;">
+            </div>
+        </div>
+
+        <div id="right-section">
+            <button class="upgrade" id="buy-monkey">
+                <img src="black-monkey-icon.png" alt="Monkey" class="upgrade-icon"> <!-- Use black icons -->
+                <div class="upgrade-details">
+                    <div class="upgrade-name">???</div> <!-- Changed to ??? -->
+                    <div class="upgrade-price">???</div> <!-- Changed to ??? -->
+                </div>
+                <span class="upgrade-owned">0</span>
+            </button>
+
+            <button class="upgrade" id="buy-farm">
+                <img src="black-farm-icon.png" alt="Banana Farm" class="upgrade-icon"> <!-- Use black icons -->
+                <div class="upgrade-details">
+                    <div class="upgrade-name">???</div> <!-- Changed to ??? -->
+                    <div class="upgrade-price">???</div> <!-- Changed to ??? -->
+                </div>
+                <span class="upgrade-owned">0</span>
+            </button>
+
+            <button class="upgrade" id="buy-factory">
+                <img src="black-factory-icon.png" alt="Banana Factory" class="upgrade-icon"> <!-- Use black icons -->
+                <div class="upgrade-details">
+                    <div class="upgrade-name">???</div> <!-- Changed to ??? -->
+                    <div class="upgrade-price">???</div> <!-- Changed to ??? -->
+                </div>
+                <span class="upgrade-owned">0</span>
+            </button>
+
+            <button class="upgrade" id="buy-banana-plant">
+                <img src="black-banana-plant-icon.png" alt="Banana Plant" class="upgrade-icon"> <!-- Use black icons -->
+                <div class="upgrade-details">
+                    <div class="upgrade-name">???</div> <!-- Changed to ??? -->
+                    <div class="upgrade-price">???</div> <!-- Changed to ??? -->
+                </div>
+                <span class="upgrade-owned">0</span>
+            </button>
+
+            <button class="upgrade" id="buy-banana-research-center">
+                <img src="black-research-center-icon.png" alt="Banana Research Center" class="upgrade-icon"> <!-- Use black icons -->
+                <div class="upgrade-details">
+                    <div class="upgrade-name">???</div> <!-- Changed to ??? -->
+                    <div class="upgrade-price">???</div> <!-- Changed to ??? -->
+                </div>
+                <span class="upgrade-owned">0</span>
+            </button>
+
+            <button class="upgrade" id="buy-bananium">
+                <img src="black-bananium-icon.png" alt="Bananium" class="upgrade-icon"> <!-- Use black icons -->
+                <div class="upgrade-details">
+                    <div class="upgrade-name">???</div> <!-- Changed to ??? -->
+                    <div class="upgrade-price">???</div> <!-- Changed to ??? -->
+                </div>
+                <span class="upgrade-owned">0</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

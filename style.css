@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+#game {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#left-section {
+    margin-right: 50px;
+    text-align: center;
+}
+
+#monkey {
+    width: 200px;
+    cursor: pointer;
+}
+
+#banana-counter {
+    margin-top: 20px;
+}
+
+#right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.upgrade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #ffeb99; /* Original yellow color */
+    border: 2px solid #333;
+    cursor: pointer;
+    height: 80px;
+    width: 300px;
+    transition: background-color 0.3s;
+}
+
+.upgrade:disabled {
+    background-color: #ddd; /* Darker tint when unaffordable */
+}
+
+.upgrade-icon {
+    width: 60px;  /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    object-fit: cover; /* Ensure image covers the button */
+    flex-shrink: 0; /* Prevent shrinking */
+    margin-right: 0; /* Remove margin to reach the border */
+}
+
+.upgrade-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.upgrade-name {
+    font-size: 18px;
+}
+
+.upgrade-price {
+    font-size: 14px;
+    color: green;
+}
+
+.upgrade-owned {
+    font-size: 16px;
+    color: gray;
+    text-align: right;
+}
+
+.upgrade:disabled {
+    background-color: #c0c0c0; /* Disabled color */
+}
+
+#save-section {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
